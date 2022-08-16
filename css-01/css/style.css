@@ -1,0 +1,36 @@
+p {
+    color: red;
+    font-size: .5em;
+}
+
+h1 {
+    color: green;
+}
+
+.destacado {
+    color: goldenrod;
+}
+
+.primer-parrafo {
+    font-size: 2em;
+}
+
+.segundo-parrafo {
+    color: aqua;
+}
+
+#primer-parrafo-destacado {
+    border: 1px solid;
+}
+
+h3 {
+    color: red;
+}
+
+.subtitulo {
+    color: green;
+}
+
+#subtitulo-destacado {
+    color: blue;
+}
