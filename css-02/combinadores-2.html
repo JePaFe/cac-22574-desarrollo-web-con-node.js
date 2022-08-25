@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        section > p {
+            color: red;
+        }
+        h2 + p {
+            color: green;
+        }
+        h3 + p {
+            color: peru;
+        }
+
+        h2 + h4 + p {
+            color: aqua;
+        }
+        h2 ~ p {
+            color: darkorange;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+        .link.active {
+            text-decoration: line-through;
+        }
+        #menu-1.active {
+            text-decoration: overline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Combinadores</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="" id="menu-1" class="link active">Uno</a></li>
+            <li><a href="" class="link">Dos</a></li>
+            <li><a href="" class="link">Tres</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Lorem ipsum dolor sit.</p>
+        <section id="seccion-1">
+            <h2 class="subtitulo" id="primer-subtitulo">Seccion 1</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </section>
+        <section class="seccion-2">
+            <h2>Seccion 2</h2>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section>
+            <h2>Aside</h2>
+            <h4>Categorias</h4>
+            <p>Lorem, ipsum dolor.</p>
+            <div class="link">
+                <p class="active">Lorem, ipsum dolor.</p>
+            </div>
+        </section>
+    </aside>
+    <footer>
+        <p>Copyright &copy; 2022</p>
+    </footer>
+</body>
+</html>

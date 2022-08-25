@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* (id, clase, elemento) */
+        h1, h2 {  /* (0, 0, 1) */
+            color: darkorange;
+        }
+        .subtitulo { /* (0, 1, 0) */
+            color: red;
+        }
+        #primer-subtitulo { /* (1, 0, 0) */
+            color: green;
+        }
+        section p {  /* (0, 0, 2) */
+            color: violet;
+        }
+        section div p {  /* (0, 0, 3) */
+            color: blue;
+        }
+        .seccion-2 p { /* (0, 1, 1) */
+            color: burlywood;
+        }
+        #seccion-1 div p { /* (1, 0, 2) */
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Combinadores</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit.</p>
+        <section id="seccion-1">
+            <h2 class="subtitulo" id="primer-subtitulo">Seccion 1</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </section>
+        <section class="seccion-2">
+            <h2>Seccion 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022</p>
+    </footer>
+</body>
+</html>
