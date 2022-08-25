@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    border: solid;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+p {
+    /* margin: 50px; */
+    /* padding: 50px; */
+    /* display: none; */
+}
+
+p#parrafo {
+    display: none;
+}
+
+header {
+    background-color: red;
+    padding: 5px 0;
+    width: 50%;
+    height: 75vh;
+}
+
+h1 {
+    /* width: 50%; */
+    background-color: green;
+}
