@@ -1,0 +1,86 @@
+body {
+    min-height: 200vh;
+}
+
+.container {
+    background-color: burlywood;
+    padding: 1em;
+}
+
+nav {
+    height: 30px;
+    width: 100%;
+    background-color: blueviolet;
+    margin-bottom: .5em;
+    position: sticky;
+    top: 10px;
+    /* filter: blur(1px); */
+}
+
+.caja {
+    width: 50px;
+    height: 50px;
+    margin-bottom: .5em;
+    padding: .5em;
+    background-color: aqua;
+}
+
+.caja-2:hover {
+    color: snow;
+    background-color: crimson;
+}
+
+a {
+    color: violet;
+    text-decoration: none;
+}
+
+a::before {
+    content: '- ';
+}
+
+a::after {
+    content: ' !!!';
+}
+
+p::after {
+    content: '...';
+}
+
+a:hover {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+input:focus {
+    /* border: 1px solid blue; */
+    /* outline: 2px solid blue; */
+    /* outline-offset: -6px; */
+}
+
+/* a:link {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+} */
+
+p::first-letter {
+    font-size: 3em;
+    color: red;
+}
+
+p::selection {
+    color: white;
+    background-color: black;
+}
+
+.caja:nth-child(odd) {
+    background-color: darkolivegreen;
+}
