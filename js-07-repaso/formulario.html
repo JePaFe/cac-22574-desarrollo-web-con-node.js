@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form class="form-contacto">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+
+        <div>
+            <label for="edad">Edad: </label>
+            <input type="nombre" name="edad" id="edad" value="21">
+        </div>
+
+        <div>
+            <label for="provincia">Provincia: </label>
+            <select name="provincia" id="provincia">
+                <option value="1">Buenos Aires</option>
+                <option value="2">Cordoba</option>
+            </select>
+        </div>
+
+        <div class="mensaje"></div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <button type="button" id="btn-procesar">Procesar</button>
+
+    <span class="mensaje"></span>
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>
