@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "1a2d252a-4aab-474f-ac0c-1af7a87e7f21",
+		"name": "Node-05",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/personajes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/personajes/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/personajes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personajes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/personajes/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Perez\",\r\n    \"status\": \"Alive\",\r\n    \"species\": \"CaC\",\r\n    \"img\": \"https://rickandmortyapi.com/api/character/avatar/2.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/personajes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personajes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/personajes/:id/edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pedro Perez\",\r\n    \"status\": \"Alive\",\r\n    \"species\": \"CaC\",\r\n    \"img\": \"https://rickandmortyapi.com/api/character/avatar/12.jpeg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/personajes/12/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personajes",
+						"12",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/personajes/:id/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/personajes/3/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"personajes",
+						"3",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
