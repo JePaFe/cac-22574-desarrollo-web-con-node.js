@@ -1,0 +1,30 @@
+<%- include('../partials/header') %> <%- include('../partials/nav') %>
+<div class="container">
+  <h1>Listado de Artículos</h1>
+  <a href="/posts/create" class="btn btn-primary">Nuevo Articulo</a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Contenido</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% posts.forEach(post => { %>
+      <tr>
+        <th scope="row"><%= post.id %></th>
+        <td><a href="/posts/<%= post.id %>"><%= post.titulo %></a></td>
+        <td>Foto 1</td>
+        <td>Contenido 1 ...</td>
+        <td>
+          <a href="/posts/<%= post.id %>/edit" class="btn btn-info">Editar</a>
+        </td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>
+<%- include('../partials/footer') %>
