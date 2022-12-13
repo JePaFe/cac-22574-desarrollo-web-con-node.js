@@ -1,0 +1,27 @@
+<%- include('../partials/header') %>
+    <%- include('../partials/nav') %>
+    <div class="container">
+      <h1>Editar Articulo</h1>
+      <form action="/posts/<%= post.id %>/update?_method=PUT" method="post">
+        <div class="mb-3 row">
+          <label for="titulo" class="col-sm-2 col-form-label">Titulo</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" name="titulo" id="titulo" value="<%= post.titulo %>">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="imagen" class="col-sm-2 col-form-label">Imagen</label>
+          <div class="col-sm-10">
+            <input type="file" class="form-control" name="imagen" id="imagen">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="contenido" class="col-sm-2 col-form-label">Contenido</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" id="contenido" name="contenido" rows="3"><%= post.contenido %></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+      </form>
+    </div>
+<%- include('../partials/footer') %>
